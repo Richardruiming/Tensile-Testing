@@ -1,4 +1,0 @@
-Initial slope: 72.63 MPa/mm
-Equation of the line: y = 72.63x + -11.13
-Maximum stress: 206.65 MPa at strain 2.01 mm/mm
-Intersection point: (2.01, 134.57)

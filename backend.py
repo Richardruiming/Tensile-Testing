@@ -62,6 +62,8 @@ def analyze():
                                plot_url=plot_url)
     except Exception as e:
         return render_template('error.html', error=str(e))
-    
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    from os import environ
+    port = int(environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
