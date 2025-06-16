@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jena Project Frontend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1 style="color:blueviolet">Tensile Testing</h1>
+<p>Input Parameters</p>
+
+</body>
+<form action="/analyze" method="post" enctype="multipart/form-data">
+  <label for="linear_points_percentage">Percentage of points for linearity estimation(1-100%):</label>
+  <input type="text" id="input_percentage" name="linear_points_percentage">
+  <br><br>
+  <label for="cross_sectional_area">Cross sectional area (mm<sup>2</sup>):</label>
+  <input type="text" id="ca" name="cross_sectional_area"><br><br>
+  <label for="offset">Offset (MPa):</label>
+  <input type="text" id="offset" name="linear_line_offset"><br><br>
+  <label>Upload csv file:</label>
+    <input type="file" id="csv_file" name="csv_file" accept=".csv"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</html>

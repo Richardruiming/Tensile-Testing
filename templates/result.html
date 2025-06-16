@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <h2>Results:</h2>
+    <p><strong>Slope:</strong> {{ slope }} MPa/mm</p>
+    <p><strong>Equation:</strong> {{ eq }}</p>
+    <p><strong>Intersection Point:</strong> {{ intersection }}</p>
+    <p><strong>Max Stress:</strong> {{ max_stress }} MPa</p>
+
+    <h2>Stress-Strain Plot</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Stress-Strain Graph">
+</body>
+</html>
